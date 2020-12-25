@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin="anonymous" integrity="sha512-YXLGLsQBiwHPHLCAA9npZWhADUsHECjkZ71D1uzT2Hpop82/eLnmFb6b0jo8pK4T0Au0g2FETrRJNblF/46ZzQ==" src="https://lib.baomitu.com/vue/2.6.12/vue.js"></script>
+</head>
+<body>
+    <div id="app">{{name}}</div>
+    <div id="app1">{{name}}</div>
+
+    <script>
+        let vm = new Vue({
+            el: '#app1',
+            data() {
+                return {
+                    name: 'hh'
+                }
+            }
+        })
+
+        vm.$mount('#app')
+    </script>
+</body>
+</html>
